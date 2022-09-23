@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script4.js" defer></script>
+</head>
+<body class="fundo" onload="timer()">
+    <header class="cabeca">
+        <h1 id="data">horas</h1>
+    </header>
+    <main>
+        <form action="" id="formu" name="formu" method="post">
+            <div class="form">
+                <label for="Nome">Nome:
+                    <input type="text" name="Nome" id="Nome" placeholder="Ex:Maria">
+                </label>
+                <label for="Idade">Idade:
+                    <input type="number" name="Idade" id="Idade" min="0" max="99" maxlength="02" placeholder="Ex:23">
+                </label>
+                <div>
+                    <label for="Sexo">Sexo:</label>
+                        <select name="Sexo" id="Sexo">
+                            <option value="3" class="esconder"></option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </label>
+                </div>
+                <label for="Endereço">Endereço Completo:
+                    <input type="text" name="Endereço" id="Endereço" placeholder="Ex:Rua do Amor">
+                </label>
+                <label for="CPF">CPF:
+                    <input type="text" onkeyup="validarCPF(); return false;" name="CPF" id="CPF" maxlength="11" max="11" placeholder="Ex: 12345678900">
+                </label>
+                <label for="RG">RG:
+                    <input type="text" onkeyup="validarRG(); return false;" name="RG" id="RG" maxlength="10" max="10" placeholder="Ex: 123456780">
+                </label>
+            </div>
+            <div class="botao">
+                <button type="reset">Apagar</button>
+                <button onclick="validarDigito(); return false;" type="submit">Enviar</button>
+            </div>
+        </form>
+        <div id="result" class="esconder">
+            <h1 id="CPF_Result">Olá</h1>
+            <button onclick="Novamente(); return false;">Novamente</button>
+        </div>
+    </main>
+</body>
+</html>

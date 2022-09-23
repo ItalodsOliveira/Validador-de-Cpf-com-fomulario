@@ -1,0 +1,123 @@
+/*Cores*/
+:root{
+    --cor-vermelho1: #ff1f3d;
+    --cor-vermelho2: #ff3751;
+    --cor-azul1: #352eff;
+    --cor-azul2: #2b4dff;
+    --cor-azul3: #6a66ff;
+    --cor-amarelo1: #ffd552;
+    --cor-amarelo2: #fce56f;
+    --cor-aqua1: #6bffd8;
+    --cor-aqua2: #59ffd8;
+    --cor-sete: #ff8880;
+    --cor-primaria: #dffff7;
+    --cor-sequndaria: #454e4c;
+    --play: #00439c;
+    --xbox: #107c10;
+    --nintendo: #e70012;
+    --steam-1: #1b334f;
+    --steam-2: #1e2f4d;
+    --epic: #121212;
+    --origin: #edf1f2;
+    --prime: #3a2e5c;
+    --ubisoft: #e5e8f1;
+    --battle1: #30587d;
+    --battle2: #1a2e49;
+    --fonte: Copperplate, "Copperplate Gothic Light";
+}
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: var(--fonte);
+    color: var(--cor-primaria);
+}
+.fundo{
+    background: radial-gradient(var(--cor-aqua2), var(--prime));
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.cabeca{
+    height: 100px;
+    background-color: darkcyan;
+    align-items: center;
+    display: grid;
+}
+.cabeca h1{
+    display: flex;
+    justify-content: center;
+}
+.cabeca a{
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.form{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+main button{
+    background: radial-gradient(var(--prime), var(--battle2));
+    height: 95px;
+    width: 480px;
+    border-radius: 5rem;
+    font-size: large;
+}
+main button:hover{
+    background: radial-gradient(var(--cor-amarelo1), var(--cor-sete));
+    height: 100px;
+    width: 490px;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all .6s;
+}
+main input{
+    color: var(--cor-sequndaria);
+    height: 50px;
+    width: 490px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    font-size: large;
+}
+main select{
+    color: var(--cor-sequndaria);
+    height: 50px;
+    width: 490px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    font-size: large;
+}
+main select option{
+    color: var(--cor-sequndaria);
+    height: 50px;
+    width: 490px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    font-size: large;
+}
+.esconder{
+    display: none;
+}
+.botao{
+    display: flex;
+    flex-wrap: wrap;
+}
+.botao1{
+    display: flex;
+    flex-direction: column;
+}

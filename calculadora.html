@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/calculadora.js" defer></script>
+</head>
+<body class="fundo">
+    <header class="cabeca">
+        <h1 id="data">horas</h1>
+    </header>
+    <main>
+        <button onclick="Fatorial(); return false;">Fatorial</button>
+        <form action="" name="formu" method="post">
+            <div class="form">
+                <label for="valor1">Digite um valor
+                    <input type="number" name="valor1" id="valor1">
+                </label>
+                <label for="valor2">Digite outro valor:
+                    <input type="number" name="valor2" id="valor2">
+                </label>
+            </div>
+            <div class="botao">
+                <button onclick="Mais(); return false;" type="submit"><p>+</p></button>
+                <button onclick="Menus(); return false;" type="submit">-</button>
+                <button onclick="Divisão(); return false;" type="submit">/</button>
+                <button onclick="Multiplicação(); return false;" type="submit">X</button>
+                <button type="reset">Apagar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
